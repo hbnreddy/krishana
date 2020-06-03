@@ -16,7 +16,7 @@ pipeline{
                 extensions: [[$class: 'CleanBeforeCheckout']], 
                 submoduleCfg: [], 
                 userRemoteConfigs: [[credentialsId: 'github_credentials', 
-                url: 'https://github.com/HariReddy910/krishna.git']]])
+                url: 'https://github.com/HariReddy910/krishana.git']]])
                 echo "Download finished form SCM"
             }
         }
