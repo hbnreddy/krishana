@@ -1,23 +1,38 @@
-<form action="action_page.php">
-  <div class="imgcontainer">
-    <img src="img_avatar2.png" alt="Avatar" class="avatar">
-  </div>
 
-  <div class="container">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+<%@ page import="java.util.*" %>
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+<HTML> 
 
-    <button type="submit">Login</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
-  </div>
+    <HEAD>
 
-  <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw">Forgot <a href="#">password?</a></span>
-  </div>
-</form>
+        <TITLE>Login Page</TITLE>
+
+    </HEAD>
+
+    <BODY >
+
+        <form method="post" action="process.jsp">
+
+            <center>
+
+                <h1 style="color:blue">Welcome To Demo Web-Page</h1>
+
+                <b style="color:blue">Login Here</b><br>
+
+                <table border="1" width="2" bgcolor="khaki" style="color:red">
+
+                    <tr><td><b>UserName</b></td> <td><input type="text" name="uname"></td></tr>
+
+                    <tr><td><b>Password</b></td> <td><INPUT type="password" name="upass"></td></tr>
+
+                    <tr><td><input type="submit" value="Login"></td>
+
+                        <td><input type="reset" value="Reset"></td>
+
+                </table>
+
+        </form>
+
+    </BODY>
+
+</HTML>
