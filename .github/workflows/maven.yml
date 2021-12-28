@@ -7,9 +7,9 @@ on:
   schedule:
     - cron: "* * * * *"
   push:
-    branches: [ master ]
+    branches: [ master, develop ]
   pull_request:
-    branches: [ master ]
+    branches: [ master, develop ]
     types: [assigned, opened, reopened, closed]
 jobs:
   build:
