@@ -13,6 +13,8 @@ on:
     tags:
      - v1.*
     types: [assigned, opened, reopened, closed]
+    paths:
+     - '**.js'
 jobs:
   build:
 
