@@ -4,11 +4,11 @@
 name: Java CI with Maven
 
 on:
-  push:
-    branches: [ master ]
+  schedule:
+    - cron: "* * * * *"
   pull_request:
-    branches: [ master ]
-    types: [opened, reopened, closed]
+    branches: [ master, develop ]
+    types: [assigned, opened, reopened, closed]
 jobs:
   build:
 
