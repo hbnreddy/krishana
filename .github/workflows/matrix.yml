@@ -9,7 +9,7 @@ jobs:
    runs-on: ${{matrix.os}}
    steps:
     - name: node version
-      uses: actions/setuo-node@v1
+      uses: actions/setup-node@v1
       with:
        node-vers: ${{ matrix.node-ver }}
     - name: node version is
