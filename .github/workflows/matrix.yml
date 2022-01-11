@@ -1,15 +1,16 @@
 name: run job on diff nodes
 on: [push]
 jobs:
-  node-ver:
+  node-version:
    strategy:
     matrix: 
      os: [ubuntu-latest, macos-latest, windows-latest]
-     node-version: [6,7,8]
+     node_version: [6,7,8]
    runs-on: ${{matrix.os}}
    steps:
     - name: node version
-      uses: actions/setup-node@v1
+      run: node -v
+    - uses: actions/setup-node@v1
       with:
        node-vers: ${{ matrix.node-ver }}
     - name: node version is
