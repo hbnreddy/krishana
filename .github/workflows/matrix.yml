@@ -1,7 +1,7 @@
 name: run job on diff nodes
 on: [push]
 jobs:
-  node-ver:
+  node-ver1:
    runs-on: ubuntu-latest
    steps:
     - name: node version
@@ -12,3 +12,13 @@ jobs:
     - name: node version is
       run: node -v
      
+  node-ver2:
+   runs-on: ubuntu-latest
+   steps:
+    - name: node version
+      run: node -v
+    - uses: actions/setup-node@v1
+      with:
+        node-version: 7
+    - name: node version is
+      run: node -v
